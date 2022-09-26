@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /*espaçamento de um para outro */
+    background-color: rgb(0, 0, 0);
+}
+
+header .logo{
+    margin-left: 5px;
+    color: rgb(255, 255, 255);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    text-align: center;
+}
+
+header nav a{
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+    margin-right: 10px; /*espaçamento de uma palavra para outra */
+}
+
+header nav a:hover{
+    color: rgb(255, 255, 255);
+    font-size: large;
+}
+
+@media screen and (max-width: 800px){ /*até 800 pixels de largura */
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pagina-inicial .introducao{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pagina-inicial .introducao .quem-sou{
+        width: 80%;
+    }
+
+    .pagina-inicial .contato img{
+        width: 10%;
+    }
+
+}
+
+.pagina-inicial {
+    background-color: rgb(0, 62, 112);
+    height: 80vh;
+}
+
+.img-perfil{
+    width: 25%;
+    border-radius:50%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.pagina-inicial .introducao {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.quem-sou{
+    width: 40%;
+    padding: 15px;
+    border: 1px solid lightgray;
+    margin-left: 5%;
+    margin-top: 2%;
+    border-radius: 10%;
+    color: rgb(202, 202, 202);
+}
+
+.contato {
+    text-align: center;
+}
+
+.contato p {
+    font-size: 20px;
+    font-style: oblique;
+    margin-bottom: 2%;
+}
+.contato img{
+    width: 3%;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: #FFF;
+    width: 100%;
+    height: 10vh;    
+    text-align: center;
+}
+
+.projetos-portifolio {
+    width: 100%;
+    height: 70vh;
+    margin: 0px auto;
+    padding: 30px 0;
+    background-color: rgb(0, 62, 112);
+}
+
+.projetos-portifolio li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    padding: 50px 20px;
+    border-radius: 10%;
+}
+
+.projetos-portifolio li img {
+    width: 30%;
+    height: 30%;
+}
+
+.projetos-portifolio li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.projetos-portifolio li a:hover{
+    color: rgb(221, 221, 221);
+    font-size: large;
+}
+
+.baixar-curriculum {
+    height: 80vh;
+    background-color: rgb(0, 62, 112);
+}
+
+.baixar-curriculum a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid lightgray;
+    margin-left: 5%;
+    border-radius: 10%;
+}
