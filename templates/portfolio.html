@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="style/style.css" rel="stylesheet">
+        <link href="{{ url_for('static',filename='style/style.css') }}" rel="stylesheet">
         <title>Portfólio de Igor</title>
     </head>
     <body>
@@ -12,9 +12,9 @@
             <div class="container">
                 <h2 class="logo">Igor da Silva Pereira</h2>
                 <nav>
-                    <a href="index.html">Home</a>
-                    <a href="portfolio.html">Portfólio</a>
-                    <a href="curriculum.html">Curriculum</a>
+                    <a href="/homepage">Home</a>
+                    <a href="/portfolio">Portfólio</a>
+                    <a href="/curriculum">Curriculum</a>
                 </nav>
             </div>
         </header>
@@ -22,18 +22,18 @@
         <ul class="projetos-portifolio">
 
             <li>
-                <img src="img/currículo.png">
+                <img src="{{ url_for('static',filename='img/currículo.png') }}">
                 <p><a href="https://igorspereira.com.br/gere-seu-curriculo/index.php">Faça seu Curriculum</a></p>
             </li>
             
             <li>
-                <img src="img/api-logo.png">
+                <img src="{{ url_for('static',filename='img/api-logo.png') }}">
                 <p><b>API - Interface de Programação de Aplicação</b></p>
                 <p><a href="https://github.com/https-github-com-spicecorpdev/spicebank">spicebank</a></p>
             </li>
 
             <li>
-                <img src="img/jogo-logo.png">
+                <img src="{{ url_for('static',filename='img/jogo-logo.png') }}">
                 <p><a href="https://igorspereira.com.br/jogos.html">Jogue um jogo</a></p>
             </li>
         </ul>

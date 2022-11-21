@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="style/style.css" rel="stylesheet">
+        <link href="{{ url_for('static',filename='style/style.css') }}" rel="stylesheet">
         <title>Portfólio de Igor</title>
     </head>
     <body>
@@ -12,16 +12,16 @@
             <div class="container">
                 <h2 class="logo">Igor da Silva Pereira</h2>
                 <nav>
-                    <a href="index.html">Home</a>
-                    <a href="portfolio.html">Portfólio</a>
-                    <a href="curriculum.html">Curriculum</a>
+                    <a href="/homepage">Home</a>
+                    <a href="/portfolio">Portfólio</a>
+                    <a href="/curriculum">Curriculum</a>
                 </nav>
             </div>
         </header>
 
         <div class="pagina-inicial">
             <div class="introducao">
-                <img src="img/20220920_192233.jpg" class="img-perfil">
+                <img src="{{ url_for('static',filename='img/20220920_192233.jpg') }}" class="img-perfil">
 
                 <div class="quem-sou">
                     <p>&nbsp;&nbsp;Olá, me chamo Igor da Silva Pereira, estou cursando o curso de <b>Desenvolvimento em Software Multiplataforma</b> na instituição <b>FATEC São José dos Campos - Prof. Jessen Vidal</b>.</p>
@@ -31,9 +31,9 @@
 
             <div class="contato">
                 <p>Me encontre no...</p>
-                <a href="https://www.linkedin.com/in/igor-da-silva-pereira-119794159/"><img src="img/logo-linkedin.png"></a>
-                <a href="https://github.com/igorpereira28"><img src="img/GitHub-Logo.png"></a>
-                <a href="https://igorspereira.com.br"><img src="img/site-logo.png"></a>
+                <a href="https://www.linkedin.com/in/igor-da-silva-pereira-119794159/"><img src="{{ url_for('static',filename='img/logo-linkedin.png') }}"></a>
+                <a href="https://github.com/igorpereira28"><img src="{{ url_for('static',filename='img/GitHub-Logo.png') }}"></a>
+                <a href="https://igorspereira.com.br"><img src="{{ url_for('static',filename='img/site-logo.png') }}"></a>
             </div>
         </div>
 
