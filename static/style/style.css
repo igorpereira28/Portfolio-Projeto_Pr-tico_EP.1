@@ -50,6 +50,12 @@ header nav a:hover{
         width: 10%;
     }
 
+    footer {
+        color: rgb(0, 0, 0);
+        display: inline;
+        height: ;
+    }
+
 }
 
 .pagina-inicial {
