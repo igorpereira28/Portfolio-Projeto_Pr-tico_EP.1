@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static',filename='style/style.css') }}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Portfólio de Igor</title>
+  </head>
+
+  <body>
+    <header>
+        <div class="container">
+            <h2 class="logo">Igor da Silva Pereira</h2>
+            <nav>
+                <a href="/" type="button" class="btn btn-primary" data-bs-toggle="button">Home</a>
+                <a href="/portfolio" type="button" class="btn btn-primary" data-bs-toggle="button">Portfólio</a>
+                <a href="/curriculum" type="button" class="btn btn-primary" data-bs-toggle="button">Curriculum</a>
+            </nav>
+        </div>
+    </header>
+
+    <div>
+        {% block body %}
+        {% endblock %}
+    </div>
+
+    <footer id="footer">
+        <!-- Copyright -->
+        © 2022 Copyright:
+        <a href="https://github.com/igorpereira28/Portfolio-Projeto_Pr-tico_EP.1" target="_blank">Desenvolvido por <b>Igor da Silva Pereira</b></a>
+        <!-- Copyright -->
+    </footer>
+</body>
+</html>
